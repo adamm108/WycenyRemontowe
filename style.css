@@ -4,3 +4,17 @@ button{
 span{
     font-size: 10px;;
 }
+div.wrap{
+    display:flex;
+flex-direction: column;
+justify-content:space-around;
+align-items:center;
+height:30vh;
+}
+section.count{
+    display:flex;
+flex-direction: column;
+justify-content:space-between;
+align-items: center;
+height:30vh;
+}
