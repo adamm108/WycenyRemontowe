@@ -15,9 +15,8 @@ var windowH= document.getElementById('windowheight')
     
 
     addbutton.addEventListener('click', ()=> {
-        const space = [];
         
-     space.push(s.value);
+     space = s.value;
         console.log(space);
    let spanResult = document.querySelector(' span.addresult');
 
