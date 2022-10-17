@@ -24,13 +24,10 @@
     </div>
     <section class="count">
       <span class="addresult"></span>
-      <input
-        type="number"
-        placeholder="Łączna długość ścian w pomieszczeniu"
-        id="lenght"
-      />
-      <input type="number" placeholder="Wysokość Pomieszczenia" id="height" />
-      <button id="add2">zatwierdź</button>
+      <span id="wallW">łączna długość ścian:</span>
+      <input type="number" id="lenght" />
+      <span id="wallH">Wysokość ścian</span>
+      <input type="number" id="height" />
       <span id="result"></span>
       <span id="windoww">Szerokość okna</span>
       <input type="number" id="windowwidth" />
@@ -38,6 +35,19 @@
       <input type="number" id="windowheight" />
       <button id="add3">zatwierdź</button>
       <span id="WindowResult"></span>
+      <p>powierzchnia okna to <span id="windowfinal"></span>m2</p>
+      <p>powierzchnia ścian to <span id="wallfinal"></span>m2</p>
+    </section>
+    <section class="prices">
+      <p>wybierz etapy remontu:</p>
+      <div class="bathroom">
+        <select name="wybierz" multiple="multiple">
+          <option value="opcja1">opcja 1</option>
+          <option value="opcja2">opcja 2</option>
+          <option value="opcja3">opcja 3</option>
+          <option value="opcja4">opcja 4</option>
+        </select>
+      </div>
     </section>
     <script src="wycenyRemontowe.js"></script>
   </body>
