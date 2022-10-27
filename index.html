@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrap">
-      <input type="number" placeholder="Ilość pomieszczeń" id="rooms" />
-      <button id="start">Dodaj</button>
-      <span class="result"></span> pomieszczenie numer
-      <span class="number"></span> to
-
-      <select id="room">
-        <option value="salon">salon</option>
-        <option value="sypialnia">sypialnia</option>
-        <option value="łazienka">łazienka</option>
-        <option value="pokój">pokój</option>
-      </select>
-      <button id="add">zatwierdź</button>
-    </div>
     <section class="count">
       <span class="addresult"></span>
       <span id="wallW">łączna długość ścian:</span>
@@ -33,20 +19,64 @@
       <input type="number" id="windowwidth" />
       <span id="windowh">Wysokość okna</span>
       <input type="number" id="windowheight" />
+      <span id="bathroomWidth">Szerokość łazienki</span>
+      <input type="number" id="bathWidth" />
+
+      <span id="bathroomLenght">Długość łazienki</span>
+      <input type="number" id="bathLenght" />
       <button id="add3">zatwierdź</button>
       <span id="WindowResult"></span>
       <p>powierzchnia okna to <span id="windowfinal"></span>m2</p>
+
       <p>powierzchnia ścian to <span id="wallfinal"></span>m2</p>
+
+      <p>powierzchnia podłogi to <span id="BathFloorResult"></span>m2</p>
     </section>
+
     <section class="prices">
       <p>wybierz etapy remontu:</p>
       <div class="bathroom">
-        <select name="wybierz" multiple="multiple">
-          <option value="opcja1">opcja 1</option>
-          <option value="opcja2">opcja 2</option>
-          <option value="opcja3">opcja 3</option>
-          <option value="opcja4">opcja 4</option>
-        </select>
+        <ul>
+          <li></li>
+          <li>Skuwanie płytek</li>
+          <li>Tynkowanie</li>
+          <li>Gruntowanie</li>
+          <li>Płytki</li>
+          <li>Sufit podwieszany</li>
+          <li>Punkty elektryczne</li>
+          <li>Punkty Hydrauliczne</li>
+          <li>Wanna</li>
+          <li>Brodzik</li>
+          <li>Geberit</li>
+          <li>Sedes</li>
+          <li>Lustro</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <form action="">
+            <div>
+              <select name="lista" size="6">
+                <optgroup label="Grupa 1">
+                  <option>Możliwość 1.1</option>
+                  <option>Możliwość 1.2</option>
+                  <option>Możliwość 1.3</option>
+                </optgroup>
+                <optgroup label="Grupa 2">
+                  <option>Możliwość 2.1</option>
+                  <option>Możliwość 2.2</option>
+                  <option>Możliwość 2.3</option>
+                </optgroup>
+                <option>Możliwość 3</option>
+                <option>Możliwość 4</option>
+                <option>Możliwość 5</option>
+              </select>
+            </div>
+          </form>
+        </ul>
       </div>
     </section>
     <script src="wycenyRemontowe.js"></script>
