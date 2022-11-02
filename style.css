@@ -42,7 +42,6 @@ span{
 section.prices{
     display:flex;
 flex-direction: column;
-justify-content:space-between;
 align-items: center;
 height:75vh;
 }
@@ -52,4 +51,7 @@ div.pricesDiv{
 }
 .bathroom label{
     display:inline-block;
+}
+ul{
+list-style: none;
 }
