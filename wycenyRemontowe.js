@@ -27,7 +27,6 @@ add3.addEventListener('click', () => {
     let windowHeight = windowH.value;
     let windowResult = parseFloat(windowWidth) * parseFloat(windowHeight);
     BathFloorResult.textContent = parseFloat(bathWidth) * parseFloat(bathLenght);
-    resultWindow.textContent = windowResult;
     console.log(windowResult);
     windowFinal.innerText = windowResult;
     wallfinal.innerText = parseFloat(wallResult) - parseFloat(windowResult);

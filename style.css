@@ -20,7 +20,8 @@ section.count{
 flex-direction: column;
 justify-content:space-between;
 align-items: center;
-height:30vh;
+height:75vh;
+background-color: darkseagreen;
 }
 div.bathroom{
     display:flex;
@@ -36,7 +37,7 @@ padding-top: 30px;;
 span{
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
+
 }
 section.prices{
     display:flex;
@@ -44,4 +45,11 @@ flex-direction: column;
 justify-content:space-between;
 align-items: center;
 height:75vh;
+}
+div.pricesDiv{
+
+    height: 10vh;;
+}
+.bathroom label{
+    display:inline-block;
 }
