@@ -32,17 +32,22 @@ add3.addEventListener('click', () => {
     wallfinal.innerText = parseFloat(wallResult) - parseFloat(windowResult);
 });
 
-const dataBase =[
-    tileCrush,
-    plaster,
-    ground,
-    tiles,
-    ceiling,
-    electricity,
-    hydraulics,
-    bath,
-    pool,
-    framesite,
-    site,
-    mirror
-]
+
+function calculate () {
+    const dataBase =[
+        tileCrush =50,
+        plaster = 30,
+        ground =10,
+        tiles=150,
+        ceiling = 100,
+        electricity= 30,
+        hydraulics = 100,
+        bath = 350,
+        pool =400,
+        framesite = 300,
+        site = 150,
+        mirror = 100;
+    ]
+    
+
+}
