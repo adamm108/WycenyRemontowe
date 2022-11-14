@@ -2,6 +2,7 @@ const pick = document.getElementById("pick");
 
 const addwall = document.querySelector("button.addWall");
 const add3 = document.getElementById("add3");
+const add4 = document.getElementById("add4");
 var lenght = document.getElementById("lenght");
 var height = document.getElementById("height");
 var result = document.getElementById("result");
@@ -29,25 +30,36 @@ add3.addEventListener('click', () => {
     BathFloorResult.textContent = parseFloat(bathWidth) * parseFloat(bathLenght);
     console.log(windowResult);
     windowFinal.innerText = windowResult;
-    wallfinal.innerText = parseFloat(wallResult) - parseFloat(windowResult);
+ const wallFinalValue =parseFloat(wallResult) - parseFloat(windowResult);
+    wallfinal.innerText = wallFinalValue
+    add4.addEventListener('click', () => {
+        const dataBase =[
+            tileCrush =50,
+            plaster = 30,
+            ground =10,
+            tiles=150,
+            ceiling = 100,
+            electricity= 30,
+            hydraulics = 100,
+            bath = 350,
+            pool =400,
+            framesite = 300,
+            site = 150,
+            mirror = 100
+        ]
+        const tilescrush = document.getElementById('tilescrush');
+        if(tilescrush.checked){
+            console.log("Cena za skuwanie płytek to: " ) 
+            const tileCrushTotal = parseFloat(wallFinalValue + BathFloorResult);
+            console.log(tileCrushTotal)
+            const tileCrushValue = dataBase[0] * tileCrushTotal
+    console.log(tileCrushValue)
+    
+        }
+        else{
+            console.log("false")
+        }
+    });
 });
 
 
-function calculate () {
-    const dataBase =[
-        tileCrush =50,
-        plaster = 30,
-        ground =10,
-        tiles=150,
-        ceiling = 100,
-        electricity= 30,
-        hydraulics = 100,
-        bath = 350,
-        pool =400,
-        framesite = 300,
-        site = 150,
-        mirror = 100;
-    ]
-    
-
-}
