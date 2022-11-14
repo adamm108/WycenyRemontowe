@@ -27,7 +27,8 @@ add3.addEventListener('click', () => {
     let windowWidth = windowW.value;
     let windowHeight = windowH.value;
     let windowResult = parseFloat(windowWidth) * parseFloat(windowHeight);
-    BathFloorResult.textContent = parseFloat(bathWidth) * parseFloat(bathLenght);
+    const BathFloorResultTotal = parseFloat(bathWidth) * parseFloat(bathLenght);
+    BathFloorResult.textContent = BathFloorResultTotal;
     console.log(windowResult);
     windowFinal.innerText = windowResult;
  const wallFinalValue =parseFloat(wallResult) - parseFloat(windowResult);
@@ -50,7 +51,7 @@ add3.addEventListener('click', () => {
         const tilescrush = document.getElementById('tilescrush');
         if(tilescrush.checked){
             console.log("Cena za skuwanie płytek to: " ) 
-            const tileCrushTotal = parseFloat(wallFinalValue + BathFloorResult);
+            const tileCrushTotal = parseFloat(wallFinalValue + BathFloorResultTotal);
             console.log(tileCrushTotal)
             const tileCrushValue = dataBase[0] * tileCrushTotal
     console.log(tileCrushValue)
@@ -59,7 +60,19 @@ add3.addEventListener('click', () => {
         else{
             console.log("false")
         }
+        const Plaster = document.getElementById('plaster');
+        if(Plaster.checked){
+            console.log("Cena za tynkowanie to: " ) 
+            const plasterTotal = dataBase[1] * wallFinalValue;
+            console.log(plasterTotal)
+        
+    
+        }
+        else{
+            console.log("false")
+        }
     });
+  
 });
 
 
