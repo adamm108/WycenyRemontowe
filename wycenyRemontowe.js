@@ -54,7 +54,8 @@ add3.addEventListener('click', () => {
             const tileCrushTotal = parseFloat(wallFinalValue + BathFloorResultTotal);
             console.log(tileCrushTotal)
             const tileCrushValue = dataBase[0] * tileCrushTotal
-    console.log(tileCrushValue)
+            const tilescrushspan = document.getElementById("tilescrushspan")
+            tilescrushspan.innerText = tileCrushValue
     
         }
         else{
@@ -64,7 +65,22 @@ add3.addEventListener('click', () => {
         if(Plaster.checked){
             console.log("Cena za tynkowanie to: " ) 
             const plasterTotal = dataBase[1] * wallFinalValue;
-            console.log(plasterTotal)
+            const plasterspan = document.getElementById("plasterspan")
+            plasterspan.innerText = plasterTotal
+        
+    
+        }
+        else{
+            console.log("false")
+        }
+        const Ground = document.getElementById('ground');
+        if(Ground.checked){
+            console.log("Cena za gruntowanie to: " ) 
+            const groundTotal = parseFloat(wallFinalValue + BathFloorResultTotal);
+            console.log(groundTotal)
+            const groundTotalValue = dataBase[2] * groundTotal
+            const groundspan = document.getElementById("groundspan")
+            groundspan.innerText = groundTotalValue;
         
     
         }
